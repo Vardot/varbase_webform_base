@@ -21,10 +21,7 @@
     "drupal/webform": "~6.3.0",
     "drupal/webform_views": "~5",
     "drupal/eca": "~3",
-    "drupal/eca_webform": "~2",
-    "drupal/ultimate_cron": "~2",
-    "drupal/config_perms": "~2",
-    "drupal/entity_clone": "~2"
+    "drupal/eca_webform": "~2"
   },
   "version": "1.0.x-dev"
 }
