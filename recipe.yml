@@ -24,3 +24,30 @@ config:
     webform.webform.contact:
       simpleConfigUpdate:
         archive: true
+    user.role.content_editor:
+      grantPermissions:
+        - 'access webform overview'
+        - 'create webform'
+        - 'edit own webform'
+    user.role.content_admin:
+      grantPermissions:
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'administer webform overview'
+        - 'create webform'
+        - 'edit any webform'
+        - 'edit own webform'
+    user.role.seo_admin:
+      grantPermissions:
+        - 'access webform overview'
+    user.role.site_admin:
+      grantPermissions:
+        - 'use text format webform_default'
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'administer webform'
+        - 'administer webform overview'
+        - 'administer webform submission'
+        - 'create webform'
+        - 'edit any webform'
+        - 'edit own webform'
