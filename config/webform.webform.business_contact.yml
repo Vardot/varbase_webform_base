@@ -114,11 +114,11 @@ elements: |-
   agreement:
     '#type': checkbox
     '#title': 'By submitting this form you agree to our <a href="/terms-and-conditions">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.'
-    '#required': true
-    '#required_error': 'You must agree to the Terms of Service and Privacy Policy before submitting.'
+    '#default_value': true
+    '#disabled': true
     '#wrapper_attributes':
       class:
-        - my-3
+        - my-4
     '#label_attributes':
       class:
         - ms-2
