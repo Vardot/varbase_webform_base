@@ -21,17 +21,14 @@ elements: |-
     '#wrapper_attributes':
       class:
         - d-flex
-    '#attributes':
-      class:
-        - fw-bold
     '#title__access': false
     '#first__title': 'First Name'
-    '#first__placeholder': 'Please provide your first name'
+    '#first__placeholder': 'Enter your first name'
     '#first__title_display': before
     '#first__required': true
     '#middle__access': false
-    '#last__title': 'Last Name'
-    '#last__placeholder': 'Please provide your last name'
+    '#last__title': 'Last name'
+    '#last__placeholder': 'Enter your last name'
     '#last__title_display': before
     '#last__required': true
     '#suffix__access': false
@@ -39,62 +36,105 @@ elements: |-
     '#flexbox': '1'
   business:
     '#type': textfield
-    '#title': Business
+    '#title': 'Company name'
     '#title_display': before
-    '#placeholder': 'Enter your organization name'
-    '#label_attributes':
-      class:
-        - fw-bold
+    '#required': true
+    '#placeholder': 'Enter Your Company Name'
   industry:
-    '#type': textfield
+    '#type': select
     '#title': Industry
     '#title_display': before
-    '#placeholder': 'Tell us your industry'
-    '#label_attributes':
-      class:
-        - fw-bold
+    '#required': true
+    '#empty_option': 'Select Industry'
+    '#options':
+      technology: Technology
+      finance: 'Finance & Banking'
+      healthcare: Healthcare
+      education: Education
+      retail: 'Retail & E-commerce'
+      manufacturing: Manufacturing
+      government: Government
+      nonprofit: Nonprofit
+      media: 'Media & Entertainment'
+      other: Other
   country:
-    '#type': textfield
+    '#type': select
     '#title': Country
-    '#placeholder': 'Enter the country location'
-    '#label_attributes':
-      class:
-        - fw-bold
+    '#title_display': before
+    '#required': true
+    '#empty_option': 'Select Country'
+    '#options': country_names
   email:
     '#type': email
     '#title': Email
-    '#placeholder': 'Your email address'
+    '#placeholder': 'Enter your business email address'
     '#required': true
-    '#label_attributes':
-      class:
-        - fw-bold
   phone:
     '#type': tel
-    '#title': 'Phone Number'
-    '#placeholder': 'Your phone number'
+    '#title': 'Phone number'
+    '#title_display': before
+    '#international': true
+    '#international_initial_country': us
+    '#required': true
+    '#placeholder': '000 000-0000'
+    '#wrapper_attributes':
+      class:
+        - d-grid
     '#label_attributes':
       class:
-        - fw-bold
+        - d-block
+    '#attributes':
+      class:
+        - w-100
+  subject:
+    '#type': textfield
+    '#title': Subject
+    '#title_display': before
+    '#required': true
+    '#placeholder': 'Type what would you like to discuss...'
   message:
     '#type': textarea
     '#title': Message
-    '#required': true
+    '#placeholder': 'Enter inquiry details here...'
+    '#counter_type': character
+    '#counter_maximum': 200
+    '#counter_minimum_message': '%d/200 Characters'
+    '#wrapper_attributes':
+      class:
+        - text-end
+    '#title_display': before
     '#label_attributes':
       class:
-        - fw-bold
-  agreement_text:
-    '#type': processed_text
-    '#display_on': both
-    '#text': '<p>By submitting this form you agree to our <a href="#" target="_self">Terms of Service</a> and <a href="#" target="_self">Privacy Policy</a>.</p>'
-    '#format': full_html
+        - d-block
+        - text-start
+    '#attributes':
+      class:
+        - text-start
+      data-options: '{"countDown": false}'
+  agreement:
+    '#type': checkbox
+    '#title': 'By submitting this form you agree to our <a href="/terms-and-conditions">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.'
+    '#required': true
+    '#required_error': 'You must agree to the Terms of Service and Privacy Policy before submitting.'
+    '#wrapper_attributes':
+      class:
+        - my-3
+    '#label_attributes':
+      class:
+        - ms-2
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Submit Your Request'
+    '#submit__label': 'Submit Form'
+    '#submit__attributes':
+      class:
+        - btn-md
+        - rounded-1
+        - w-100
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
@@ -300,7 +340,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: _default
-      body: '[webform_submission:values:message:value]'
+      body: "<p><strong>Subject:</strong> [webform_submission:values:subject]</p>\n<p>[webform_submission:values:message:value]</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -337,7 +377,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: _default
-      body: '[webform_submission:values:message:value]'
+      body: "<p><strong>Subject:</strong> [webform_submission:values:subject]</p>\n<p>[webform_submission:values:message:value]</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
