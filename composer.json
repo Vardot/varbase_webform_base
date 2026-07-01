@@ -17,7 +17,7 @@
     "source": "http://cgit.drupalcode.org/varbase_webform_base"
   },
   "require": {
-    "drupal/core": "~11.3.0",
+    "drupal/core": "~11.4.0",
     "drupal/webform": "~6.3.0",
     "drupal/webform_views": "~5",
     "drupal/eca": "~3",
