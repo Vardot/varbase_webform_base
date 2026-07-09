@@ -2,7 +2,7 @@
 
 # Varbase Webform Base
 [![pipeline status](https://git.drupalcode.org/project/varbase_webform_base/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_webform_base/-/pipelines)
-[![Varbase Webform Base](https://img.shields.io/badge/Varbase%20Webform%20Base-1.0.0--alpha2-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_webform_base/-/pipelines?ref=1.0.0-alpha2)
+[![Varbase Webform Base](https://img.shields.io/badge/Varbase%20Webform%20Base-1.0.0--beta1-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_webform_base/-/pipelines?ref=1.0.0-beta1)
 [![Automated Functional Testing](https://git.drupalcode.org/project/varbase_project/badges/11.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_project/-/pipelines)
 
 A recipe to manage default installed webform modules, configurations, and permissions for Varbase webform experience.
