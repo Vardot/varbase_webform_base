@@ -23,5 +23,5 @@
     "drupal/eca": "~3",
     "drupal/eca_webform": "~2"
   },
-  "version": "1.0.0-beta1"
+  "version": "1.0.x-dev"
 }
