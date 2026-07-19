@@ -12,18 +12,41 @@ title: 'Newsletter Subscribe'
 description: '<p>A form to collect email addresses for newsletter subscriptions.</p>'
 categories: {  }
 elements: |-
-  email:
-    '#type': email
-    '#title': Email
-    '#title_display': invisible
-    '#placeholder': email
-    '#autocomplete': 'off'
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
-    '#required': true
-  actions:
-    '#type': webform_actions
-    '#title': 'Submit button(s)'
-    '#submit__label': Subscribe
+  subscribe:
+    '#type': container
+    '#attributes':
+      class:
+        - d-flex
+        - flex-column
+        - flex-sm-row
+        - align-items-stretch
+        - gap-2
+    email:
+      '#type': email
+      '#title': Email
+      '#title_display': invisible
+      '#placeholder': 'Enter your email address'
+      '#autocomplete': 'off'
+      '#required': true
+      '#wrapper_attributes':
+        class:
+          - flex-grow-1
+          - mb-0
+      '#attributes':
+        class:
+          - w-100
+          - rounded-pill
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#submit__label': Subscribe
+      '#submit__attributes':
+        class:
+          - btn-md
+          - rounded-pill
+          - w-100
+          - w-sm-auto
+          - flex-shrink-0
 css: ''
 javascript: ''
 settings:
