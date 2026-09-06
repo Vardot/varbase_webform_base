@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-06
+### Changed
+- Promote the Varbase Webform Base recipe to the stable `1.0.0` release.
+- Update the version badge to `1.0.0` in `README.md`.
+
 ## [1.0.0-rc1] - 2026-08-15
 ### Changed
 - Update the version badge to `1.0.0-rc1` in `README.md`.
@@ -25,7 +30,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Webform Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-rc1...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0...1.0.x
+[1.0.0]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-beta1...1.0.0-rc1
 [1.0.0-beta1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-alpha2...1.0.0-beta1
 [1.0.0-alpha2]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-alpha1...1.0.0-alpha2
