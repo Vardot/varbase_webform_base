@@ -76,7 +76,7 @@ elements: |-
     '#international': true
     '#international_initial_country': us
     '#required': true
-    '#placeholder': '000 000-0000'
+    '#placeholder': '(202) 555-0123'
     '#wrapper_attributes':
       class:
         - d-grid
@@ -86,6 +86,7 @@ elements: |-
     '#attributes':
       class:
         - w-100
+      data-options: '{"separateDialCode": true}'
   subject:
     '#type': textfield
     '#title': Subject
@@ -115,7 +116,7 @@ elements: |-
     '#type': checkbox
     '#title': 'By submitting this form you agree to our <a href="/terms-and-conditions">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.'
     '#default_value': true
-    '#disabled': true
+    '#required': true
     '#wrapper_attributes':
       class:
         - my-4
