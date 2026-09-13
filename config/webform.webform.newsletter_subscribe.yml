@@ -36,6 +36,8 @@ elements: |-
         class:
           - w-100
           - rounded-pill
+          - px-4
+        style: 'min-height:3.5rem'
     actions:
       '#type': webform_actions
       '#title': 'Submit button(s)'
@@ -47,6 +49,8 @@ elements: |-
           - w-100
           - w-sm-auto
           - flex-shrink-0
+          - px-4
+        style: 'min-height:3.5rem'
 css: ''
 javascript: ''
 settings:
