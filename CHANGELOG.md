@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-13
+### Fixed
+- Business Contact webform: the Phone number field rejected every valid national
+  number. Added `data-options: '{"separateDialCode": true}'` to the `phone`
+  element and replaced the invalid `000 000-0000` placeholder with
+  `(202) 555-0123`.
+- Business Contact webform: the consent checkbox was `#disabled`, so it could
+  neither be acted on nor enforced. Removed `#disabled` and added `#required`;
+  the pre-checked `#default_value` is unchanged.
+
+### Changed
+- Set the recipe version to `1.0.1` in `composer.json`.
+- Update the version badge to `1.0.1` in `README.md`.
+
 ## [1.0.0] - 2026-09-06
 ### Changed
 - Promote the Varbase Webform Base recipe to the stable `1.0.0` release.
@@ -30,7 +44,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Webform Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.1...1.0.x
+[1.0.1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-beta1...1.0.0-rc1
 [1.0.0-beta1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-alpha2...1.0.0-beta1
