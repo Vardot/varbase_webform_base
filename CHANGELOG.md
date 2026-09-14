@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-09-14
+### Fixed
+- Newsletter Subscribe: the email field now matches the height of the Subscribe
+  button beside it. [#3622822](https://www.drupal.org/i/3622822)
+- Newsletter Subscribe: the email field height now also matches on themes whose
+  buttons are taller than the Bootstrap default.
+  [#3622846](https://www.drupal.org/i/3622846)
+
 ## [1.0.1] - 2026-09-13
 ### Fixed
 - Business Contact webform: the Phone number field rejected every valid national
