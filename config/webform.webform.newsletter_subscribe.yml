@@ -35,6 +35,7 @@ elements: |-
       '#attributes':
         class:
           - w-100
+          - h-100
           - rounded-pill
           - px-4
         style: 'min-height:3.5rem'
