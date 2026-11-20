@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Business Contact webform: the Email confirmation handler now sends to the visitor's
+  `email` element. It sent to the site address, so the visitor got no confirmation and the
+  site got every enquiry twice. [#3636903](https://git.drupalcode.org/project/varbase_webform_base/-/work_items/3636903)
 
 ## [1.0.2] - 2026-09-14
 ### Fixed
