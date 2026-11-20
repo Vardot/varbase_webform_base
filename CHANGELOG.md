@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `email` element. It sent to the site address, so the visitor got no confirmation and the
   site got every enquiry twice. [#3636903](https://git.drupalcode.org/project/varbase_webform_base/-/work_items/3636903)
 
+### Changed
+- Business Contact webform: the consent checkbox now starts unticked, so consent is an action the
+  visitor takes. It stays required. [#3636904](https://git.drupalcode.org/project/varbase_webform_base/-/work_items/3636904)
+
 ## [1.0.2] - 2026-09-14
 ### Fixed
 - Newsletter Subscribe: the email field now matches the height of the Subscribe

@@ -115,7 +115,6 @@ elements: |-
   agreement:
     '#type': checkbox
     '#title': 'By submitting this form you agree to our <a href="/terms-and-conditions">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.'
-    '#default_value': true
     '#required': true
     '#wrapper_attributes':
       class:
