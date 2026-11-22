@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.3] - 2026-11-22
 ### Fixed
 - Business Contact webform: the Email confirmation handler now sends to the visitor's
   `email` element. It sent to the site address, so the visitor got no confirmation and the
@@ -60,7 +62,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Webform Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.1...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.3...1.0.x
+[1.0.3]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.2...1.0.3
+[1.0.2]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0-beta1...1.0.0-rc1
