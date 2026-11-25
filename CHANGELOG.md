@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-11-25
+### Changed
+- Use caret constraints and allow Drupal 11.4 and later and Drupal 12 in Varbase Webform Base recipe ([#3636906](https://git.drupalcode.org/project/varbase_webform_base/-/work_items/3636906)).
+- Update the version badge to `1.0.4` in `README.md`.
+
 ## [1.0.3] - 2026-11-22
 ### Fixed
 - Business Contact webform: the Email confirmation handler now sends to the visitor's
@@ -62,7 +67,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Webform Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.3...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.4...1.0.x
+[1.0.4]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.2...1.0.3
 [1.0.2]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_webform_base/-/compare/1.0.0...1.0.1
